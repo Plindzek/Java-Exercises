@@ -1,17 +1,17 @@
 package ytNauka;
 
-public class Prostok¹t extends Figura{
+public class Prostokat extends Figura{
 private double bokA;
 private double bokB;
 
-public Prostok¹t()	
+public Prostokat()	
 {this(1.0,1.0);}
 
-public Prostok¹t(double a, double b)
+public Prostokat(double a, double b)
 
-{	this( a, b, "bia³y" , false);}
+{	this( a, b, "biaï¿½y" , false);}
 
-public Prostok¹t(double a, double b, String k, boolean w)
+public Prostokat(double a, double b, String k, boolean w)
 {super (k,w);
 bokA=a;
 bokB=b;	}
@@ -20,15 +20,15 @@ bokB=b;	}
 public double obliczPole()
 {return bokA*bokB;}
 
-public double obliczObwód()
+public double obliczObwod()
 {return 2*(bokA+bokB);}
 
 public String toString ()
 {return "Nazwa: " + getClass().getName() + ", Bok a:"+bokA+", bok b: "+bokB+", Pole: "+obliczPole()+ 
-		 ", Obwód: "+obliczObwód()+ " oraz "+ super.toString();}
+		 ", Obwï¿½d: "+obliczObwod()+ " oraz "+ super.toString();}
 
 public static void main(String[] args) {
-	Prostok¹t pr = new Prostok¹t();
+	Prostokat pr = new Prostokat();
 	System.out.println(pr);
 	
 }

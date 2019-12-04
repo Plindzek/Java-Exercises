@@ -19,17 +19,17 @@ public class TestSwing extends JFrame {
 	JButton setsFuel = new JButton("Jedno paliwo", loadIcon); // przyciski
 	JButton setsFuel2 = new JButton("benzyna", saveIcon);
 	JButton setsFuel3 = new JButton("benzyna + LPG", subsIcon);
-	JButton exit = new JButton("zakoñcz", unusIcon);
+	JButton exit = new JButton("zakoï¿½cz", unusIcon);
 
-	JButton baton = new JButton("nie duœ mnie", loadIcon); 
+	JButton baton = new JButton("nie duï¿½ mnie", loadIcon); 
 	JButton baton2 = new JButton("wybierz mnie", saveIcon);
-	JButton baton3 = new JButton("naduœ mnie", subsIcon);
-	JButton baton4 = new JButton("zakoñcz", unusIcon);
+	JButton baton3 = new JButton("naduï¿½ mnie", subsIcon);
+	JButton baton4 = new JButton("zakoï¿½cz", unusIcon);
 	
 	JPanel pane = new JPanel();
-	JPanel zak³adkaPrzyciski = new JPanel();
-	JMenuItem j1 = new JMenuItem("zrób coœ", saveIcon); // elementy menu
-	JMenuItem j2 = new JMenuItem("zrób coœ2", loadIcon);
+	JPanel zakladkaPrzyciski = new JPanel();
+	JMenuItem j1 = new JMenuItem("zrï¿½b coï¿½", saveIcon); // elementy menu
+	JMenuItem j2 = new JMenuItem("zrï¿½b coï¿½2", loadIcon);
 	JMenu m1 = new JMenu("Plik");
 	JMenuBar menu = new JMenuBar();
 
@@ -41,7 +41,7 @@ public class TestSwing extends JFrame {
 
 	JLabel etykieta = new JLabel("Etykieta tekstowa", ikonka, SwingConstants.RIGHT); // etykieta nieedytowalna
 	JTextField poleTekstowe = new JTextField("pole tekstowe", 20); // pole tekstowe 1 wiersz
-	JPasswordField haslo = new JPasswordField(20); // pole has³a
+	JPasswordField haslo = new JPasswordField(20); // pole hasï¿½a
 	JTextArea obszarTekstowy = new JTextArea("obszar tekstowy", 8, 60); // obszar tekstowy
 	JScrollPane pasek = new JScrollPane(obszarTekstowy, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
 			ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -60,13 +60,13 @@ public class TestSwing extends JFrame {
 			ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
 	JSlider suwak = new JSlider(JSlider.VERTICAL);
-	JToolBar tPas = new JToolBar("Pasek Narzêdziowy", JToolBar.CENTER);
+	JToolBar tPas = new JToolBar("Pasek Narzï¿½dziowy", JToolBar.CENTER);
 
 	JProgressBar current = new JProgressBar(0, 20000);
 
 	int num
 	;
-	public void iterate() {									//metoda do paska postêpu
+	public void iterate() {									//metoda do paska postï¿½pu
 		while (num < 20000) {
 			current.setValue(num);
 			try {
@@ -88,22 +88,22 @@ public class TestSwing extends JFrame {
 				}
 			}
 		} catch (Exception e) {
-			System.err.println("Nie potrafiê wczytaæ " + "systemowego wygl¹du: " + e);
+			System.err.println("Nie potrafiï¿½ wczytaï¿½ " + "systemowego wyglï¿½du: " + e);
 		}
 	}
 
 	public TestSwing() { 											// konstruktor obiektu ramki programu
 		super("Ramka programu");
-		setLookAndFeel(); 											// skórka okna
-		JOptionPane.showMessageDialog(null, "Teraz przetestujemy sobie komponenty Swinga"); // okno z wiadomoœci¹
+		setLookAndFeel(); 											// skï¿½rka okna
+		JOptionPane.showMessageDialog(null, "Teraz przetestujemy sobie komponenty Swinga"); // okno z wiadomoï¿½ciï¿½
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		setSize(800, 600); 											// rozmiar okna
 		setBounds(200, 20, 800, 600); 								// pozycja okna na ekranie oraz rozmiar
 		
-		GridLayout managerUk³adu= new GridLayout(3, 3, 0, 0);  	//ile wierszy, kolumn, odstêp w pikselach poziom, pion
-		sett4.setLayout(managerUk³adu);
+		GridLayout managerUkladu= new GridLayout(3, 3, 0, 0);  	//ile wierszy, kolumn, odstï¿½p w pikselach poziom, pion
+		sett4.setLayout(managerUkladu);
 		
 		add(pane);
 		
@@ -112,18 +112,18 @@ public class TestSwing extends JFrame {
 		menu.add(m1);
 		setJMenuBar(menu);
 
-		pane.add(tabs); // zak³adki
+		pane.add(tabs); // zakï¿½adki
 		
-		tabs.addTab("G³ówne ustawienia", sett);
-		tabs.addTab("ustawienia czegoœ", sett2);
-		tabs.addTab("ustawienia czegoœ innego", sett3);
+		tabs.addTab("Gï¿½ï¿½wne ustawienia", sett);
+		tabs.addTab("ustawienia czegoï¿½", sett2);
+		tabs.addTab("ustawienia czegoï¿½ innego", sett3);
 		tabs.addTab("Przyciski", sett4);
 
-		choice.add(opcja1); // pola wyboru w zak³adkach
+		choice.add(opcja1); // pola wyboru w zakï¿½adkach
 		choice.add(opcja2);
 		sett.add(opcja1);
 		sett.add(opcja2);
-		sett.add(haslo); // pole has³a w zak³adce sett
+		sett.add(haslo); // pole hasï¿½a w zakï¿½adce sett
 		haslo.setEchoChar('*');
 		sett.add(suwak); // obiekt suwaka
 		suwak.setMinorTickSpacing(5);
@@ -131,7 +131,7 @@ public class TestSwing extends JFrame {
 		suwak.setPaintLabels(true);
 		suwak.setPaintTicks(true);
 
-		sett2.add(pasek); // pasek przewijania zawieraj¹cy obszar tekstowy
+		sett2.add(pasek); // pasek przewijania zawierajï¿½cy obszar tekstowy
 		// nie dodajemy obiektu obszar tekstowy, bo zawiera je obiekt pasek
 		obszarTekstowy.setLineWrap(true);
 		obszarTekstowy.setWrapStyleWord(true);
@@ -141,17 +141,17 @@ public class TestSwing extends JFrame {
 		sett3.add(etykieta);
 		sett3.add(poleTekstowe);
 		sett3.add(listaa);
-		sett3.add(pasek1); // pasek1 zawiera listab, aby pojawi³ sie pasek przewijania
-		listab.setVisibleRowCount(4); // ustawiamy iloœæ widocznych wierszy listy listab, je¿eli jest pasek
-		// przewijania domyœlnie widoczne jest 8
+		sett3.add(pasek1); // pasek1 zawiera listab, aby pojawiï¿½ sie pasek przewijania
+		listab.setVisibleRowCount(4); // ustawiamy iloï¿½ï¿½ widocznych wierszy listy listab, jeï¿½eli jest pasek
+		// przewijania domyï¿½lnie widoczne jest 8
 
 		sett4.add(baton);
 		sett4.add(baton2);
 		sett4.add(baton3);
 		sett4.add(baton4);
 		
-		// pasek narzêdziowy
-		Dimension d = new Dimension(10, 30); // nie wiedzia³em jak wpisaæ Dimension i stworzy³em obiekt
+		// pasek narzï¿½dziowy
+		Dimension d = new Dimension(10, 30); // nie wiedziaï¿½em jak wpisaï¿½ Dimension i stworzyï¿½em obiekt
 		tPas.add(setsFuel);
 		tPas.addSeparator(d);
 		tPas.add(exit);
@@ -162,10 +162,10 @@ public class TestSwing extends JFrame {
 		tPas.addSeparator(d);
 		add(tPas, BorderLayout.SOUTH);
 
-		pane.add(current); // pasek postêpu
+		pane.add(current); // pasek postï¿½pu
 		current.setStringPainted(true);
 		
-		setLookAndFeel(); 											// skórka okna musi byc tu, bo znika
+		setLookAndFeel(); 											// skï¿½rka okna musi byc tu, bo znika
 		setVisible(true);
 	}
 
@@ -177,16 +177,16 @@ public class TestSwing extends JFrame {
 	
 	static {
 		
-		String odp = JOptionPane.showInputDialog(null, "Wpisz swoje imiê:"); // wyskakuj¹ce okienka to z opcj¹ input
+		String odp = JOptionPane.showInputDialog(null, "Wpisz swoje imiï¿½:"); // wyskakujï¿½ce okienka to z opcjï¿½ input
 																				// string
-		String[] wybor = { "jab³ka", "cukierki", "chipsy" };
-		int wyb1 = JOptionPane.showOptionDialog(null, odp + " wybierz m¹drze", "Okno wyboru", 0, // to z wyborem opcji
+		String[] wybor = { "jabï¿½ka", "cukierki", "chipsy" };
+		int wyb1 = JOptionPane.showOptionDialog(null, odp + " wybierz mï¿½drze", "Okno wyboru", 0, // to z wyborem opcji
 				JOptionPane.INFORMATION_MESSAGE, null, wybor, wybor[0]);
 
 		if (wyb1 == 0) {
-			JOptionPane.showConfirmDialog(null, "Dobry wybór!", "info", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showConfirmDialog(null, "Dobry wybï¿½r!", "info", JOptionPane.INFORMATION_MESSAGE);
 		} else {
-			JOptionPane.showConfirmDialog(null, "Od takiego jedzenia zostaje siê t³ust¹ œwini¹ :O", "info",
+			JOptionPane.showConfirmDialog(null, "Od takiego jedzenia zostaje siï¿½ tï¿½ustï¿½ ï¿½winiï¿½ :O", "info",
 					JOptionPane.INFORMATION_MESSAGE);
 		}
 

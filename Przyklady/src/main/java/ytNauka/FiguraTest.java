@@ -17,15 +17,15 @@ public FiguraTest(int doKonstruktora, String j)
 	public static void main(String[] args) {
 		
 		FiguraTest test = new FiguraTest(1);
-		Ko這 ko這 = new Ko這();
-		Ko這 ko這2 = new Ko這(50);
+		Kolo kolo = new Kolo();
+		Kolo kolo2 = new Kolo(50);
 		
-		Prostok靖 prost = new Prostok靖();
-		Prostok靖 prost2 = new Prostok靖(3,7, "be穎wy",true);
+		Prostokat prost = new Prostokat();
+		Prostokat prost2 = new Prostokat(3,7, "be嚙緻wy",true);
 		
 		Figura[] figury = new Figura[4];
-		figury[0]=ko這;
-		figury[1]=ko這2;
+		figury[0]=kolo;
+		figury[1]=kolo2;
 		figury[2]=prost;
 		figury[3]=prost2;
 		
@@ -33,10 +33,10 @@ public FiguraTest(int doKonstruktora, String j)
 		
 		/* 
 		for (int i=0;i<figury.length;i++)
-		{if (figury[i] instanceof Ko這) 
-		{System.out.println(((Ko這)figury[i]).obliczPole());}
-		else {if (figury[i] instanceof Prostok靖)
-		{System.out.println(((Prostok靖)figury[i]).obliczPole());}
+		{if (figury[i] instanceof Ko嚙緻) 
+		{System.out.println(((Ko嚙緻)figury[i]).obliczPole());}
+		else {if (figury[i] instanceof Prostok嚙緣)
+		{System.out.println(((Prostok嚙緣)figury[i]).obliczPole());}
 		
 		}}
 		

@@ -3,22 +3,22 @@ package ytNauka;
 public  abstract class Figura implements Areable{
 
 	private String kolor;
-	private boolean wype³nienie;
+	private boolean wypelnienie;
 	
 	public Figura()
 	{this ("Czarny", false);}
 	
 	public Figura(String k, boolean w)
 	{kolor =k;
-	wype³nienie = w;}
+	wypelnienie = w;}
 	
 	 public String toString() 
-	 {return "Kolor: " + kolor + ", Wype³nienie: " + wype³nienie;}
+	 {return "Kolor: " + kolor + ", Wypeï¿½nienie: " + wypelnienie;}
 	
 	// public double obliczPole ()
 	 //{return 666;}
-	 //public abstract double obliczPole(); //metoda stworzona, aby uzyskaæ dostêp do metody z podklasy
-	 //public abstract double obliczObwód(); //metoda stworzona, aby uzyskaæ dostêp do metody z podklasy
+	 //public abstract double obliczPole(); //metoda stworzona, aby uzyskaï¿½ dostï¿½p do metody z podklasy
+	 //public abstract double obliczObwï¿½d(); //metoda stworzona, aby uzyskaï¿½ dostï¿½p do metody z podklasy
 	 
 	public static void main(String[] args) {
 	
