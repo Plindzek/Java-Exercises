@@ -21,6 +21,11 @@ class Monitor implements Trackable{
 
 	@Override
 	public Trackable beginTracking(Trackable waaat) {
+	    /*
+	     * przykład pokazuje, jak w interfejsie zastosować parametr metody:
+	     * definiujemy go  jako obiekt typu interfejsu 
+	     * który bedziemy mogli potem rzutowac w klasie implementującej interfejs na obiekt tej klasy
+	     */
 		
 		Monitor mon = (Monitor) waaat;
 		
