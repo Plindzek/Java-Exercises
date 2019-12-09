@@ -18,8 +18,7 @@ public class DataWriter implements Writer {
     /*
      * adaptujemy interfejs do obs³ugi zapisu za pomoc¹ zmodyfikowanej metody save
      */
-
-    @Override
+@Override
     public void save(String data) {
 
 	NewWriter adapter = new NewWriter();
