@@ -16,7 +16,9 @@ public class Main
 
         Switch lampButton = new ClickSwitch(new Lamp());
         
-        IDevice lampButton111 = new Radio(); //standardowa droga
+       
+        IDevice lampButton1 = new Radio(); //standardowa droga
+
         
         lampButton.On();
         lampButton.Off();
