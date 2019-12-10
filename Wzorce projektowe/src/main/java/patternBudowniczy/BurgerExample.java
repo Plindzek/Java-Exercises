@@ -6,21 +6,21 @@ public class BurgerExample {
 
 	BurgerBuilder builder = new BurgerBuilderImpl();
 	/*
-	 * builder zgodnie ze swoim konstruktorem stworzy³ nowy obiekt Burger
-	 *  co wyœwietlamy poni¿ej na konsoli
+	 * builder zgodnie ze swoim konstruktorem stworzyl nowy obiekt Burger
+	 *  co wyswietlamy ponizej na konsoli
 	 */
 	System.out.println(builder);
 
-	builder.setMeat("podwójna wo³owina");
+	builder.setMeat("podwï¿½jna woï¿½owina");
 	builder.setSauce("czosnkowy");
 	/*
-	 * ustawiliœmy builderowi nowe argumenty sprawd¿my teraz, jak wygl¹da nasz
+	 * ustawilismy builderowi nowe argumenty sprawdzmy teraz, jak wyglada nasz
 	 * obiekt
 	 */
 	System.out.println(builder);
 
 	/*
-	 * metod¹ build wyci¹gamy nasz obiekt Burger z BurgerBuildera i przypisujemy do zmiennej
+	 * metoda build wyciagamy nasz obiekt Burger z BurgerBuildera i przypisujemy do zmiennej
 	 */
 	Burger doubleGarlic = builder.build();
 

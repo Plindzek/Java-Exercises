@@ -3,7 +3,7 @@ package patternFasada;
 class Paczkomat {
 
     boolean isDeliverBoxFull() {
-	System.out.println("Box nie jest pe³en");
+	System.out.println("Box nie jest pelen");
 	return false;
     }
 
@@ -13,7 +13,7 @@ class Paczkomat {
     }
 
    void getUserData() {
-	System.out.println("u¿ytkownik wprowadzi³ dane");
+	System.out.println("uzytkownik wprowadzil dane");
     }
 
     void openBox() {

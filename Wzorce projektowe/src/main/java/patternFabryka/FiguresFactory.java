@@ -3,15 +3,15 @@ package patternFabryka;
 public class FiguresFactory {
     
 /*
- * Fabryka figur tworzy zadany obiekt w zale¿noœci od podanych paramtrów
+ * Fabryka figur tworzy zadany obiekt w zaleznosci od podanych parametrow
  */
     
     public Figures makeFigure(String whatProduce, double length) {
 	
 	
 	
-	if (whatProduce=="Ko³o") {
-	    return new Circle("Kó³ko", length);
+	if (whatProduce=="KoÅ‚o") {
+	    return new Circle("KÃ³Å‚ko", length);
 	}
 	if (whatProduce=="Kwadrat") {
 	    return new Square("Kwadrat", length);

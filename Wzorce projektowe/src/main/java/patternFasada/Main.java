@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	/*
-	 * implementacja metod ukryta przed u¿ytkownikiem w klasie Facade
+	 * implementacja metod ukryta przed uzytkownikiem w klasie Facade
 	 */
 
 	Facade Klient = new Facade();

@@ -3,7 +3,7 @@ package patternAdapter;
 class NewWriter {
 
     /*
-     * definiujemy now¹ metodê save
+     * definiujemy nowa metode save
      */
 
     public void save(String data, int color) {
@@ -16,7 +16,7 @@ class NewWriter {
 public class DataWriter implements Writer {
 
     /*
-     * adaptujemy interfejs do obs³ugi zapisu za pomoc¹ zmodyfikowanej metody save
+     * adaptujemy interfejs do obslugi zapisu za pomoca zmodyfikowanej metody save
      */
 @Override
     public void save(String data) {

@@ -5,7 +5,7 @@ public class BurgerBuilderImpl implements BurgerBuilder {
     private Burger burger;
 
     BurgerBuilderImpl() {
-   	burger = new Burger(); //powstanie nowy obiekt Burger bez argumentów
+   	burger = new Burger(); //powstanie nowy obiekt Burger bez argumentow
        }
 
     @Override
@@ -14,11 +14,11 @@ public class BurgerBuilderImpl implements BurgerBuilder {
     }
 
     @Override
-    public Burger build() {//ta metoda pozwoliwydobyæ nasz obiekt z przypisanymi argumentami z buildera
+    public Burger build() {//ta metoda pozwoli wydobyc nasz obiekt z przypisanymi argumentami z buildera
 	return burger;
     }
 /*
- * metody typu interfejsu zmieniaj¹ settery klasy Burger
+ * metody typu interfejsu zmieniaja settery klasy Burger
  */
     @Override
     public BurgerBuilder setMeat(String meat) {

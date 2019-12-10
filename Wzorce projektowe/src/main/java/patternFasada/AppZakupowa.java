@@ -3,16 +3,16 @@ package patternFasada;
 class AppZakupowa {
 
     void sendNotification() {
-	System.out.println("SMS wys³any");
+	System.out.println("SMS wyslany");
     }
 
    boolean isPaymentsecured() {
-	System.out.println("zamówienie op³acone");
+	System.out.println("zamowienie oplacone");
 	return true;
     }
 
     boolean isUserDatavalidated() {
-	System.out.println("U¿ytkownik zweryfikowany");
+	System.out.println("Uzytkownik zweryfikowany");
 	return true;
     }
 
