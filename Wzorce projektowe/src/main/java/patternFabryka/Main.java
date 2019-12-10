@@ -3,6 +3,7 @@ package patternFabryka;
 public class Main {
 
     public static void main(String[] args) {
+	long t1 = System.currentTimeMillis();
 	FiguresFactory figuresFactory = new FiguresFactory();
 	/*
 	 * stworzylismy obiekt fabryki, ktory tworzy rozne obiekty o typie Figura
@@ -18,5 +19,9 @@ public class Main {
 	System.out.println(figure1);
 	System.out.println(figure2);
 	System.out.println(figure3);
+	
+	long t2 = System.currentTimeMillis();
+	long cycleTime = t2-t1;
+	System.out.println(cycleTime);
     }
 }

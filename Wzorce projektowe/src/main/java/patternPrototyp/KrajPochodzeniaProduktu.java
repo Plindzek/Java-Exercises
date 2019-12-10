@@ -1,5 +1,6 @@
 package patternPrototyp;
 
+
 public enum KrajPochodzeniaProduktu
 {
 	Polska,
@@ -8,6 +9,12 @@ public enum KrajPochodzeniaProduktu
 	Wlochy,
 	Szwajcaria,
 	Norwegia,
-	Irlandia
+	Irlandia;
+	
+	KrajPochodzeniaProduktu (){
+	    
+	}
 }
+
+
 

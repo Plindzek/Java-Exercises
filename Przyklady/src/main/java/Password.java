@@ -1,4 +1,4 @@
-/* Rozwi¹zanie dla rozdzia³ 9., æwiczenie 2. */
+/* Rozwiï¿½zanie dla rozdziaï¿½ 9., ï¿½wiczenie 2. */
 
 
 
@@ -8,7 +8,7 @@ public class Password extends JFrame {
     PasswordFrame pass = new PasswordFrame();
     
     public Password() {
-        super("Poproœ o has³o");
+        super("Popros o haslo");
         setSize(540, 80);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
@@ -22,13 +22,13 @@ public class Password extends JFrame {
 
 class PasswordFrame extends JFrame {
     public PasswordFrame() {
-        super("Has³o");
+        super("Hasï¿½o");
         setSize(210, 130);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         JPanel pane = new JPanel();
-        JLabel usernameLabel = new JLabel("Nazwa u¿ytkownika: ");
+        JLabel usernameLabel = new JLabel("Nazwa uzytkownika: ");
         JTextField username = new JTextField(8);
-        JLabel passwordLabel = new JLabel("Has³o: ");
+        JLabel passwordLabel = new JLabel("Haslo: ");
         JPasswordField password = new JPasswordField(8);
         pane.add(usernameLabel);
         pane.add(username);

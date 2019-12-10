@@ -1,3 +1,4 @@
+package testThreads;
 
 
 public class Klasa

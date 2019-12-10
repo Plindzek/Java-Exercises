@@ -2,7 +2,9 @@ public class zmienne {
 
 	public static void main(String[] args) {
 	
-		/* to jest znak komentarza wielowierszowego */
+		/* 
+		 * to jest znak komentarza wielowierszowego
+		 */
 		/**komentarz Javadoc*/
 		
 		char toBedzieZnakA ='a';
