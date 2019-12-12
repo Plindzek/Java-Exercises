@@ -1,6 +1,5 @@
 
 import java.awt.GridLayout;
-import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 
@@ -17,13 +16,13 @@ public class FeedInfo extends JFrame {
     private JTextField type;
 
     public FeedInfo() {
-        super("Informacje o Ÿródle");
+        super("Informacje o zrodle");
         setSize(400, 145);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLookAndFeel();
         // nazwa witryny
         String response1 = JOptionPane.showInputDialog(null,
-            "Wpisz nazwê witryny:");
+            "Wpisz nazwe witryny:");
         name = new JTextField(response1, 20);
 
         // adres witryny
@@ -65,11 +64,11 @@ public class FeedInfo extends JFrame {
             
                 }}} 
         catch (Exception e) {
-            System.err.println("Nie potrafiê wczytaæ "
-                + "systemowego wygl¹du: " + e);
+            System.err.println("Nie potrafie wczytac "
+                + "systemowego wygladu: " + e);
         }}
     
     public static void main(String[] arguments) {
-        FeedInfo frame = new FeedInfo();
+        new FeedInfo();
     }
 }

@@ -1,3 +1,4 @@
+package interfejsy;
 
 interface Trackable{
 	abstract void track();

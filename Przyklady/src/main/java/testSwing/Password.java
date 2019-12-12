@@ -1,3 +1,4 @@
+package testSwing;
 /* Rozwi�zanie dla rozdzia� 9., �wiczenie 2. */
 
 
