@@ -11,7 +11,7 @@ public class BurgerExample {
 	 */
 	System.out.println(builder);
 
-	builder.setMeat("podw�jna wo�owina");
+	builder.setMeat("podwójna wołowina");
 	builder.setSauce("czosnkowy");
 	/*
 	 * ustawilismy builderowi nowe argumenty sprawdzmy teraz, jak wyglada nasz
@@ -22,9 +22,9 @@ public class BurgerExample {
 	/*
 	 * metoda build wyciagamy nasz obiekt Burger z BurgerBuildera i przypisujemy do zmiennej
 	 */
-	Burger doubleGarlic = builder.build();
+	Burger myBurger = builder.build();
 
-	System.out.println(doubleGarlic);
+	System.out.println(myBurger);
     }
 
 }
