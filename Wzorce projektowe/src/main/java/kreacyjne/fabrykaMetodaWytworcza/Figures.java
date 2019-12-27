@@ -1,4 +1,4 @@
-package fabryka;
+package fabrykaMetodaWytworcza;
 
 public interface Figures {
 
