@@ -4,10 +4,15 @@ public class MainDI {
     
     public static void main(String[] args) {
         DeliveryPackage deliveryPackage = new DeliveryPackage("Książka", "Effective Java", "Księżyc 103");
-        DeliveryServiceDI deliveryService = new DeliveryServiceDI(new AirplaneTransport());
-        deliveryService.sendPackage(deliveryPackage);
-        deliveryService.sendPackage(deliveryPackage);
-        deliveryService.sendPackage(deliveryPackage);
+        
+
+        DeliveryServiceDI airplaneDeliveryService = new DeliveryServiceDI(new AirplaneTransport());
+        DeliveryServiceDI shipDeliveryService = new DeliveryServiceDI(new ShipTransport());
+        DeliveryServiceDI truckDeliveryService = new DeliveryServiceDI(new TruckTransport());
+        
+        airplaneDeliveryService.sendPackage(deliveryPackage);
+        truckDeliveryService.sendPackage(deliveryPackage);
+        shipDeliveryService.sendPackage(deliveryPackage);
     }
 
 }
