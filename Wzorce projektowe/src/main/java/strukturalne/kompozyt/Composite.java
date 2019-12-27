@@ -4,11 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Composite implements IComponent {
-
+/*
+ * kompozyt tworzy hierarchie obiektów w formie drzewa 
+ * 
+ */
     @Override
     public void operation() {
 	System.out.println("display leaf: " + this);
     }
+    
 
     private List<IComponent> children = new ArrayList<IComponent>();
 
