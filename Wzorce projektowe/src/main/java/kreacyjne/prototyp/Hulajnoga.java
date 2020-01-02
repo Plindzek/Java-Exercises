@@ -13,13 +13,12 @@ public class Hulajnoga implements Cloneable {
 	_hamulce = hamulce;
 	_kolka = kolka;
     }
-    /*
-     * zakomentowana wersja bez użycia interfejsu
-     */
-//    public Object Clone() {
-//	var sklonowanaHulajnoga = new Hulajnoga(_kierownica, _naklejka, _hamulce, _kolka);
-//	return sklonowanaHulajnoga;
-//    }
+
+    public Object clone() {
+	var sklonowanaHulajnoga = new Hulajnoga(_kierownica, _naklejka, _hamulce, _kolka);
+	return sklonowanaHulajnoga;
+    }
+    
     /*
      * metoda clone z interfejsu Cloneable wykonuje klonowanie płytkie (shallow copy)
      * jeżeli pole klonowanego obiekty zawiera referencję, pózniejsza zmiana tego pola będzie równiez widoczna w klonie
@@ -29,16 +28,6 @@ public class Hulajnoga implements Cloneable {
      * obiektu nie pociągnęła zmiany pól drugiego
      */
 
-    public Object Clone() {
-
-	Object sklonowanaHulajnoga = null;
-	try {
-	    sklonowanaHulajnoga = this.clone();
-	} catch (CloneNotSupportedException ole) {
-	    ole.printStackTrace();
-	}
-	return sklonowanaHulajnoga;
-    }
 
     /*
      * mozna ukryć przeciążenie, abysmy mogli zobaczyć adres obiektu (czy referencje
