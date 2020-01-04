@@ -5,6 +5,7 @@ public class Main {
         {
             CareTaker caretaker = new CareTaker();
             Originator originator = new Originator();
+
             originator.setState("State1");
             originator.setState("State2");
             caretaker.addMemento(originator.save());

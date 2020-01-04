@@ -3,14 +3,18 @@ package mediator;
 public class Main {
 
     public static void main(String[] args) {
+
+	// tworzymy obiekt mediatora
 	ChatRoom chatroom = new ChatRoom();
 
+	// tworzymy zależności
         Participant George = new Male("George");
         Participant Jasmine = new Female("Jasmine");
         Participant Ringo = new Male("Ringo");
         Participant John = new Male("John");
         Participant Paul = new Male("Paul");
 
+	// rejestrujemy zależności
         chatroom.Register(George);
         chatroom.Register(Paul);
         chatroom.Register(Ringo);

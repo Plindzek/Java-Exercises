@@ -2,7 +2,9 @@ package lancuchZobowiazan;
 
 import java.util.LinkedList;
 
-public class Program {
+// przykład listy jednokierunkowej
+
+public class Przyklad {
 
 public static void main(String[] args)
     {

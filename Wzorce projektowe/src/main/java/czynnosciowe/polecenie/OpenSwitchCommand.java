@@ -1,5 +1,6 @@
 package polecenie;
 
+
 public class OpenSwitchCommand implements Command {
 
 
@@ -10,6 +11,8 @@ public class OpenSwitchCommand implements Command {
         _switchable = switchable;
     }
 
+
+    @Override
     public void execute()
     {
         _switchable.powerOn();

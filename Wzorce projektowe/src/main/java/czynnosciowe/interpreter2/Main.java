@@ -6,11 +6,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	String roman = "MMXX";
 
-	/*
-	 * Context ustawia input na nasz string
-	 */
+	String roman = "MMXX";
 
 	Context context = new Context(roman);
 
@@ -27,10 +24,9 @@ public class Main {
 
 	    /*
 	     * wywołujemy metodę interpret z klasy abstrakcyjnej iteracyjnie z obiektami
-	     * interpretującymi tysiące, setki itp
-	     * metoda za każdym wywołaniem obcina context o jedną literę
-	     * co pozwala na przejscie przy kazdej iteracji do odpowiedniej litery
-	     * 
+	     * interpretującymi rzędy wielkości metoda za każdym wywołaniem obcina context o
+	     * jedną literę co pozwala na przejscie przy kazdej iteracji do litery
+	     * odpowiadającej rzędowi wielkości zgodnie z dodanymi obiektami
 	     */
 	    exp.Interpret(context);
 	}

@@ -1,5 +1,13 @@
 package pamiatka_memento;
 
+/**
+ * 
+ * przechowuje obecny stan obiektu
+ * 
+ * 
+ * @author www
+ *
+ */
 public class Memento {
     private String state;
 

@@ -1,5 +1,12 @@
 package pamiatka_memento;
 
+/**
+ * zapisuje oraz przywraca stan obiektu
+ * 
+ * @author www
+ *
+ */
+
 public class Originator {
     private String state;
 

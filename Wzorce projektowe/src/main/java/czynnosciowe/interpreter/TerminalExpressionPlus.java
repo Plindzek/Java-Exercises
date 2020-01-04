@@ -9,4 +9,9 @@ public class TerminalExpressionPlus implements Expression{
 	 s.push(s.pop() + s.pop());
 	
     }
+
+    @Override
+    public String toString() {
+	return "" + getClass().getName();
+    }
 }

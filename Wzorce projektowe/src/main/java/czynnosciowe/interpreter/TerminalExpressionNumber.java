@@ -16,6 +16,10 @@ public class TerminalExpressionNumber implements Expression {
             {
                 s.push(number);
             }
-        
+
+    @Override
+    public String toString() {
+	return "" + getClass().getName();
+    }
 }
 

@@ -1,18 +1,18 @@
 package iterator;
 
+// Klient, który korzysta z klasy ListCollection, implementującej interfejs
+// Collection
+
 public class Main {
 
     public static void main(String[] args) {
 	
-	/*
-	 * Klient, który korzysta z klasy ListCollection, implementującej interfejs Collection
-	 * 
-	 */
-	
+
 	ListCollection listCollection = new ListCollection();
 	
+//pętla, która wykonuje sie dopóki hasNext=true i drukująca zawartość tablicy
 
-        for (IteratorAbstraction iterator = listCollection.createIterator(); iterator.hasNext();)
+        for (IteratorAbstraction iterator = listCollection.createList(); iterator.hasNext();)
         {
             String name = (String)iterator.next();
             System.out.println("Name : " + name);

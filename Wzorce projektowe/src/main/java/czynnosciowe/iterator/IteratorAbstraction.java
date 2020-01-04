@@ -1,9 +1,10 @@
 package iterator;
 
+/**
+ * zapewnia obsługę metod iteratora
+ */
 public interface IteratorAbstraction {
-    /*
-     * definiuje metody Iteratora
-     */
+
 
     boolean hasNext();
     Object next();

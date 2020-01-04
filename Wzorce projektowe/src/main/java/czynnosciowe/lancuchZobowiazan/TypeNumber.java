@@ -1,5 +1,10 @@
 package lancuchZobowiazan;
 
+/**
+ * definiuje numer zadania
+ * 
+ * @author www
+ */
 public enum TypeNumber {
     
         Zadanie_1,

@@ -1,7 +1,7 @@
 package lancuchZobowiazan;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -20,11 +20,15 @@ public class Main {
 	Number three = new Three();
 
 	// Ustawiamy, komu obiekty maja przekazywac zadania (jednokierunkowa lista)
-	
-	one.setObject(two);
+	// Czyli Number number z klasy Number otrzymuje referencję do wskazanego
+	// obiektu,
+	// co pozwala wykonać forward request na kolejnym obiekcie
+
+	one.setObject(two); // tutaj nie zachodzi one=two, tylko one.number = two
 	two.setObject(three);
 
 	//lista zadan
+
 	List<TypeNumber> questOnToday = new ArrayList<TypeNumber>();
 	questOnToday.add(TypeNumber.Zadanie_1);
 	questOnToday.add(TypeNumber.Zadanie_2);

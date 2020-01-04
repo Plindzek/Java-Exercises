@@ -1,11 +1,12 @@
 package iterator;
 
-public interface Collection {
-/*
- *definiuje metodę createIterator()
- *
+/**
+ * definiuje metodę typu IteratorAbstraction, tworzącą listę
  */
+
+public interface Collection {
+
     
-    IteratorAbstraction createIterator();
+    IteratorAbstraction createList();
 }
 

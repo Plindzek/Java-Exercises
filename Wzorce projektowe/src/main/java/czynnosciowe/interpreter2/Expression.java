@@ -1,18 +1,18 @@
 package interpreter2;
 
+/**
+ * wzorzec Interpreter przekształca podane dane wejściowe i zwraca w nowej
+ * formie
+ */
+
 public abstract class Expression {
-
-    /*
-     * wzorzec Interpreter przekształca podane dane wejściowe i zwraca
-     * w nowej formie 
+    /**
+     * metoda Interpret bierze input i sprawdza, czy zaczyna się okresloną literą
+     * jeżeli tak, dodaje do outputu okreslona cyfrę*multiplier po czym usuwa tą
+     * literę, tak, aby mozna było operować na kolejnej
      */
-
     public void Interpret(Context context) {
-	/*
-	 * metoda Interpret bierze input i sprawdza, czy zaczyna się okresloną literą
-	 * jeżeli tak, dodaje do outputu okreslona cyfrę*multiplier po czym usuwa tą
-	 * literę
-	 */
+
 	if (context.get_input().length() == 0)
 	    return;
 
