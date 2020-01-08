@@ -1,7 +1,8 @@
-import lombok.Data;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 @Data
 @AllArgsConstructor
+
 
 public class Song {
     private String fileName;
@@ -10,4 +11,5 @@ public class Song {
     private String title;
     private String artist;
     private Long lenght;
+
 }

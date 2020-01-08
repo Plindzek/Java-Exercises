@@ -1,7 +1,8 @@
 package polecenie;
 
 /**
- * def. execute()
+ * definiuje execute()
+ * 
  */
 public interface Command {
 

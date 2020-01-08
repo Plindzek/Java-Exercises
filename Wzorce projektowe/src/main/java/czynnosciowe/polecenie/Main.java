@@ -8,12 +8,21 @@ public class Main {
 
         String argument=null;
 
-        Switchable lamp = new Lamp();
+	// Lamp lamp = new Lamp();
+	Switchable lamp = new Lamp();
 
+
+        /**
+	 * stworzenie poleceń, które wykonują metody on/off na lampie, "wyręczając" w
+	 * tym samą lampę żądania stają się obiektami i można nimi łatwiej zarządzać np
+	 * umieszczać w listach, parametryzować
+	 */
+        
         Command switchClose = new CloseSwitchCommand(lamp);
         Command switchOpen = new OpenSwitchCommand(lamp);
 
         Switch sswitch = new Switch(switchClose, switchOpen);
+
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj: ");
@@ -25,11 +34,13 @@ public class Main {
             
             if (argument.equals("on"))
             {
-                sswitch.open();
+		sswitch.open();
+		// lamp.powerOn();
             }
             else if (argument.equals("off"))
             {
-                sswitch.close();
+		sswitch.close();
+		// lamp.powerOff();
             }
             else if (argument.equals("exit"))
             {
