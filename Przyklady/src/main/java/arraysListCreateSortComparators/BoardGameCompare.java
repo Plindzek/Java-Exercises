@@ -27,7 +27,7 @@ public class BoardGameCompare {
 	System.out.println("Sortowanie tablic.......................");
 	Arrays.sort(games);
 	
-	System.out.println(Arrays.toString(games)); //dzia³a dziêki metodzie compareTo
+	System.out.println(Arrays.toString(games)); // dziala dzieki metodzie compareTo
 	
 	List<String> list1 = new ArrayList<>();
 	list1.add("Dorota");
@@ -57,19 +57,19 @@ public class BoardGameCompare {
 	list.add(new BoardGame("Terra", 8.12, new BigDecimal("100.00"), 2, 1));
 	
 	Collections.sort(list1);
-	System.out.println("\nSortowanie listy Stringów i Intów.......................");
+	System.out.println("\nSortowanie listy Stringow i Intow.......................");
 	System.out.println(list1);
 	System.out.println(liczby);
-	System.out.println("\nInterfejs Comparable aby dzia³a³o sortowanie dla list.......................");
+	System.out.println("\nInterfejs Comparable aby dzialalo sortowanie dla list.......................");
 	/*
-	 * Collections.sort(list1) jest to proste sortowanie i na liœcie list o typie BoardGame nie
-	 * bêdzie dzia³aæ dopóki nie dodamy implementacji Comparable do BoardGame 
-	 * poniewa¿ sort przyjmuje tylko typy, które implementuj¹
-	 * Comparable. Co te¿ do koñca nie
-	 * rozwi¹¿e problemu poniewa¿ ka¿da zmiana sposobu sortowania w trakcie wykonywania programu wymaga³aby zmiany
-	 * przes³anianej metody interfejsu CompareTo.  
-	 * dla zaawansowanego sortowania s³u¿y interfejs Comparator i metoda List.sort(Comparator)
-	 * musimy stworzyæ klasê implementuj¹c¹ Comparator typowany na BoardGame i przes³onic metode compare
+	 * Collections.sort(list1) jest to proste sortowanie i na liï¿½cie list o typie BoardGame nie
+	 * bï¿½dzie dziaï¿½aï¿½ dopï¿½ki nie dodamy implementacji Comparable do BoardGame 
+	 * poniewaï¿½ sort przyjmuje tylko typy, ktï¿½re implementujï¿½
+	 * Comparable. Co teï¿½ do koï¿½ca nie
+	 * rozwiï¿½ï¿½e problemu poniewaï¿½ kaï¿½da zmiana sposobu sortowania w trakcie wykonywania programu wymagaï¿½aby zmiany
+	 * przesï¿½anianej metody interfejsu CompareTo.  
+	 * dla zaawansowanego sortowania sï¿½uï¿½y interfejs Comparator i metoda List.sort(Comparator)
+	 * musimy stworzyï¿½ klasï¿½ implementujï¿½cï¿½ Comparator typowany na BoardGame i przesï¿½onic metode compare
 	 */
 	Collections.sort(list);
 	System.out.println(list);
@@ -79,8 +79,8 @@ public class BoardGameCompare {
 	    @Override
 	    public int compare(String o1, String o2) {
 		/*
-		 * Stringi posiadaja metodê CompareTo, dziêki której mo¿emy np przy pomocy -1
-		 * posortowaæ w odwrotnej kolejnoœci
+		 * Stringi posiadaja metodï¿½ CompareTo, dziï¿½ki ktï¿½rej moï¿½emy np przy pomocy -1
+		 * posortowaï¿½ w odwrotnej kolejnoï¿½ci
 		 */
 
 		return -1 * o1.compareTo(o2);

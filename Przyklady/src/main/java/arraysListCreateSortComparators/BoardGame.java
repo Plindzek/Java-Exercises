@@ -59,9 +59,9 @@ public class BoardGame  implements Comparable<BoardGame>{
     }
 
     /*
-     * ponizej metoda z interfejsu. Dodana obs³uga sortowania po nazwie za pomoc¹
-     * compareTo z klasy String/Bigdecimal i  zwraca int mniejszy od
-     * zera(numerycznie/alfabetycznie this<o), równy 0(numerycznie/alfabetycznie
+     * ponizej metoda z interfejsu. Dodana obsÅ‚uga sortowania po nazwie za pomocÄ…
+     * compareTo z klasy String/Bigdecimal i zwraca int mniejszy od
+     * zera(numerycznie/alfabetycznie this<o), rÃ³wny 0(numerycznie/alfabetycznie
      * this=o) lub wiekszy(numerycznie/alfabetycznie this>o)
      */
     @Override
