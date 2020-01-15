@@ -1,6 +1,12 @@
 package inputOutput;
-import java.io.*;
-import java.nio.file.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class NioAllCapsDemo {
     public static void main(String[] arguments) {
@@ -14,16 +20,16 @@ class AllCaps {
     void convert() {
         try {
 
-        	//utwórz obiekty plików
+	    // utworz obiekty plikow
             //FileSystem fs = FileSystems.getDefault(); 
             
             Path source = FileSystems.getDefault().getPath(sourceName);
             Path temp = FileSystems.getDefault().getPath("tmp_" + sourceName);
 
-            // utwórz strumieñ wejœciowy
+	    // utworz strumien wejsciowy
             BufferedReader in = new BufferedReader(new FileReader(source.toFile()));
 
-            // utwórz strumieñ wyjœciowy
+	    // utworz strumien wyjsciowy
             BufferedWriter out = new   BufferedWriter(new FileWriter(temp.toFile()));
 
             boolean eof = false;
@@ -43,7 +49,7 @@ class AllCaps {
             Files.delete(source);
             Files.move(temp, source);
         } catch (IOException|SecurityException se) {
-            System.out.println("B³¹d -- " + se.toString());
+	    System.out.println("Error -- " + se.toString());
         }
     }
 }

@@ -1,5 +1,6 @@
 package arraysListCreateSortComparators;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArraysListTest {
 
@@ -8,7 +9,7 @@ public class ArraysListTest {
 		ArrayList <String> wyrazy = new ArrayList<String>();
 		
 		wyrazy.add("Jestem ");
-		wyrazy.add("programist¹ ");
+		wyrazy.add("programistï¿½ ");
 		wyrazy.add("hehe ");
 		wyrazy.add(" :D :D ");
 		wyrazy.add(1, "zajebistym ");
@@ -47,7 +48,9 @@ public class ArraysListTest {
 			obiekty.add(dupa);
 			
 			for(ArraysListTest s:obiekty)
-			{System.out.print(s);}
+	{
+	    System.out.print(s);
+	}
 			
 			
 			

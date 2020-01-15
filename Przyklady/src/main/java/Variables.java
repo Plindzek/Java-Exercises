@@ -1,6 +1,8 @@
-import java.math.*;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Random;
 
-public class zmienne {
+public class Variables {
 
     public static void main(String[] args) {
 
@@ -10,30 +12,30 @@ public class zmienne {
 	/** komentarz Javadoc */
 
 	char toBedzieZnakA = 'a';
+	// zmienne wraz z ich maksymalną pojemnością
 	byte od128Do127 = -128;
 	short toJestShort = -32767;
-	int toJestInt = 2_147_483_647;
+	int toJestInt = 2_147_483_647; // mozna stosować takie separatory
 	long max = 9223372036854775807L;
-	float nieUzywac = 3.4E+38F;
-	double tegoUzywac = 1.7E+308;
+	// zmiennoprzecinkowe
+	float wiekszaOdLong = 3.4E+38F;
+	double najwieksza = 1.7E+308;
 
 	boolean czyPrawda;
-	int age = 30;
-	double height = 174.0;
-	int weight = 74;
+	int age = 5;
+	double height = 5.5;
+	int weight = 5;
 	double dobreDzielenie = height / age;
 
 	System.out.println("wynik dzielenia int i double przypisany do double: " + dobreDzielenie);
-	byte sss = (byte) 900;
-	System.out.println("rzutowanie 900 na byte: " + sss);
+	byte nieZmiesciSie = (byte) 900;
+	System.out.println("rzutowanie 900 na byte: " + nieZmiesciSie);
 
 	double weight1 = weight;
-
-	System.out.println("Wynik rzutowania niejawnego int weight na typ double: " + weight1 + "\n");
+	System.out.println("Wynik rzutowania niejawnego int weight(5) na typ double: " + weight1 + "\n");
 
 	weight1 = 74.74;
 	int weight2 = (int) weight1;
-
 	System.out.println("Wynik rzutowania jawnego double weight1 (" + weight1 + ") na typ int: " + weight2
 		+ "\nJak widac po rzutowaniu informacje zostaly utracone");
 
@@ -56,10 +58,15 @@ public class zmienne {
 	int binarny = 0b010;
 	String unicode = "\u0167";
 	double A = Math.PI;
-	double losowaLiczba = Math.random();
-	System.out.println((int) (losowaLiczba * 100));
-	System.out.println(A);
-	
+	System.out.println("PI: " + A);
+
+	// losowa liczba z zakresu od 0-50
+	Random random = new Random();
+	int losowa = random.nextInt(51);
+	System.out.println("losowa liczba " + losowa);
+	double losowaLiczba = Math.random() * 100;
+	System.out.println("losowa Liczba 2: " + (int) (losowaLiczba));
+
 	BigInteger duzaLiczbaCalkowita=new BigInteger("10000000000000000000000000000000");
 	BigInteger druga = new BigInteger("11111111114545454300000");
 	//działania arytmetyczne na BigInteger
@@ -77,7 +84,13 @@ public class zmienne {
 	System.out.println("druga linia\b");
 	System.out.println("trzecia\" linia\\");
 	System.out.println("unicode\n");
-
+	System.out.println(
+		String.format("%10s", "To jest ") + String.format("%10s", "przykład ")
+			+ String.format("%10s", "formatted ") + String.format("%10s", "String"));
+	System.out.println(String.format("%10s", "inny ") + String.format("%10s", "przykład ")
+		+ String.format("%10s", "formatted ") + String.format("%10s", "String"));
+	System.out.format("%(,.2f", -60000.25);
+	System.out.println();
 	int x = 9;
 	int y = 4;
 	int testModulo = x % y;
@@ -85,25 +98,23 @@ public class zmienne {
 
 	double a, b, c;
 	double przypisywanie = a = b = c = 10;
-	System.out.println("a = b = c = 10\n");
+	System.out.println("a = b = c = 10");
 	System.out.println("operatory przypisania\n");
 	a += b; // a=a+b
 	System.out.println("a " + a);
-	System.out.println("b " + b + " wynik operatora a+=b\n");
+	System.out.println("b " + b + " wynik operatora a+=b");
 	a -= b; // a=a-b
 	System.out.println("a " + a);
-	System.out.println("b " + b + " wynik operatora a-=b\n");
+	System.out.println("b " + b + " wynik operatora a-=b");
 	a *= b; // a=a*b
 	System.out.println("a " + a);
-	System.out.println("b " + b + " wynik operatora a*=b\n");
+	System.out.println("b " + b + " wynik operatora a*=b");
 	a /= b; // a=a/b
 	System.out.println("a " + a);
-	System.out.println("b " + b + " wynik operatora a/=b\n");
+	System.out.println("b " + b + " wynik operatora a/=b");
 
 	a /= b + 1 - 1;// uwaga, tu wynik a=10/(10+1-1) czyli najpierw oblicza (od prawej), potem
-		       // przekszta�ca
-	System.out.println("a " + a);
-	System.out.println(b + "\n");
+		       // przekształca
 	a = b = c = 1;
 	// inkrementacja i dekrementacja
 	a++; // a+1
@@ -126,12 +137,10 @@ public class zmienne {
 	myname += " xD"; // ten operator dodaje inny tekst na koncu tekstu
 	System.out.println(myname);
 
-	Byte tege = 100;
+	Double tege = 100.00; // klasa Double, a nie double, aby zastosować poniższe zmienne
 	System.out.println("tege: " + tege.MAX_VALUE);
 	System.out.println("Rozmiar tege: " + tege.SIZE);
 
     }
 
-    private static void ZmiennaVoidReprezentujeNic() {
-    }
 }
