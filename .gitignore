@@ -3,3 +3,5 @@ Przyklady/.settings/org.eclipse.core.resources.prefs
 Przyklady/.classpath
 *.prefs
 Przyklady/.classpath
+mavenstart/db.mv.db
+mavenstart/db.trace.db

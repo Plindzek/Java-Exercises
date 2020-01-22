@@ -1,6 +1,0 @@
-<application>
-  <component name="IntentionManagerSettings">
-    <ignoreAction name="Java/Declaration/Create Test" />
-    <ignoreAction name="Java/Modifiers/Change access modifier" />
-  </component>
-</application>

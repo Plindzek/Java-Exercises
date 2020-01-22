@@ -1,6 +1,0 @@
-<application>
-  <component name="NotificationConfiguration">
-    <notification groupId="JDK Location different to JAVA_HOME" />
-    <notification groupId="Key Promoter X" displayType="TOOL_WINDOW" shouldLog="false" />
-  </component>
-</application>
