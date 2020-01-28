@@ -1,0 +1,10 @@
+<application>
+  <component name="ConsoleFoldingSettings">
+    <option name="addedPositive">
+      <list>
+        <option value="at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]" />
+        <option value="org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'langService' defined in file [D:\Github\hello\hello\target\classes\io\github\mat3e\lang\LangService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'langRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List io.github.mat3e.lang.LangRepository.findByCodeIsContainingAndWelcomeMessage(java.lang.String,java.lang.String)! No property welcomeMessage found for type Lang!" />
+      </list>
+    </option>
+  </component>
+</application>
