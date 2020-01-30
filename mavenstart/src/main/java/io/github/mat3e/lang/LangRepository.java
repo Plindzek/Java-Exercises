@@ -1,11 +1,11 @@
-package io.github.mat3e;
+package io.github.mat3e.lang;
 
+import io.github.mat3e.HibernateUtil;
+
+import java.util.List;
 import java.util.Optional;
 
-/**
- * keeps list of Lang objects, and return specific  by given id
- */
-class LangRepository {
+public class LangRepository {
 
 /**
  * version commented without hibernate
@@ -29,8 +29,8 @@ class LangRepository {
 //                .filter(l -> l.getId().equals(id))
 //                .findFirst();
 //    }
-    private Lang result;
-    Optional<Lang> findByID(Integer id){
+    public Optional<Lang> findById(Integer id){
+        Lang result = null;
         var session = HibernateUtil.getSessionFactory().openSession();
         var transaction = session.beginTransaction();
 
@@ -45,4 +45,22 @@ class LangRepository {
         session.close();
 return Optional.ofNullable(result);
     }
-}
+
+    List <Lang>findAll(){
+        var session = HibernateUtil.getSessionFactory().openSession();
+        var transaction = session.beginTransaction();
+        List<Lang> result = null;
+        try {
+
+            result = session.createQuery("from Lang", Lang.class).list();
+
+            transaction.commit();
+        } catch (Exception e) {
+            transaction.rollback();
+        }
+
+        session.close();
+        return result;
+    }
+    }
+

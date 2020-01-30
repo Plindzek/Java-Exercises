@@ -1,7 +1,6 @@
-package io.github.mat3e;
+package io.github.mat3e.lang;
 
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,11 +8,11 @@ import javax.persistence.Table;
 
 /**
  * class POJO
- * modificated to Hibernate @entity
+ * being modificated to Hibernate @entity
  */
 @Entity
 @Table(name="languages")
-class Lang {
+public class Lang {
     /**
      * hibernate id auto generating strategy
      */

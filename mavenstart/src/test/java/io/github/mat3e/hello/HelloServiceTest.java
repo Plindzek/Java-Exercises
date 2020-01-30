@@ -1,5 +1,7 @@
-package io.github.mat3e;
+package io.github.mat3e.hello;
 
+import io.github.mat3e.lang.Lang;
+import io.github.mat3e.lang.LangRepository;
 import org.junit.Test;
 
 import java.util.Optional;
@@ -20,7 +22,7 @@ public class HelloServiceTest {
 
         // when
 
-        var result = SUT.prepareGreeting(null, "-1");
+        var result = SUT.prepareGreeting(null, -1);
 
         //then
         assertEquals(WELCOME + " " + HelloService.FALLBACK_NAME + "!", result);
@@ -36,7 +38,7 @@ public class HelloServiceTest {
 
         //when
 
-        var result = SUT.prepareGreeting(name, "-1");
+        var result = SUT.prepareGreeting(name, -1);
 
         //then
         assertEquals(WELCOME + " " + name + "!", result);
@@ -58,21 +60,6 @@ public class HelloServiceTest {
     }
 
     @Test
-    public void test_prepareGreting_textLang_returnsGreetingWithFallbackIDLang() throws Exception {
-        //given
-
-        var mockRepository = fallbackLangIdRepository();
-        var SUT = new HelloService(mockRepository);
-
-        //when
-
-        var result = SUT.prepareGreeting(null, "abc");
-
-        //then
-        assertEquals(FALLBACK_ID_WELCOME + " " + HelloService.FALLBACK_NAME + "!", result);
-    }
-
-    @Test
     public void test_prepareGreeting_nonExistingLang_returnsGreetingWithFallbackLang() throws Exception {
         //given
 
@@ -81,7 +68,7 @@ public class HelloServiceTest {
 
         //when
 
-        var result = SUT.prepareGreeting(null, "-1");
+        var result = SUT.prepareGreeting(null, -1);
 
         //then
         assertEquals(HelloService.FALLBACK_LANG.getWelcomeMsg() + " " + HelloService.FALLBACK_NAME + "!", result);
@@ -91,7 +78,7 @@ public class HelloServiceTest {
         return new LangRepository() {
 
             @Override
-            Optional<Lang> findByID(Integer id) {
+            public Optional<Lang> findById(Integer id) {
                 if (id.equals(HelloService.FALLBACK_LANG.getId())) {
                     return Optional.of(new Lang(null, FALLBACK_ID_WELCOME, null));
                 }
@@ -104,7 +91,7 @@ public class HelloServiceTest {
         return new LangRepository() {
 
             @Override
-            Optional<Lang> findByID(Integer id) {
+            public Optional<Lang> findById(Integer id) {
                 return Optional.of(new Lang(null, WELCOME, null));
             }
 
@@ -115,7 +102,7 @@ public class HelloServiceTest {
         return new LangRepository() {
 
             @Override
-            Optional<Lang> findByID(Integer id) {
+            public Optional<Lang> findById(Integer id) {
 
                 return Optional.empty();
             }
