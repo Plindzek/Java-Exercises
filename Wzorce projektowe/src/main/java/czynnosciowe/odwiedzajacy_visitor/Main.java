@@ -4,10 +4,10 @@ public class Main {
     
     public static void main(String[] args) {
 	
-        ObjectStructure o = new ObjectStructure();
+        ObjectStructure structure = new ObjectStructure();
 
-        o.attach(new ElementA());
-        o.attach(new ElementB());
+        structure.attach(new ElementA());
+        structure.attach(new ElementB());
 
         Visitor v1 = new Visitor1();
         Visitor v2 = new Visitor2();
@@ -17,8 +17,8 @@ public class Main {
 	 * obiektu
 	 */
 
-        o.accept(v1);
-        o.accept(v2);
+        structure.accept(v1);
+        structure.accept(v2);
 
     }
 
