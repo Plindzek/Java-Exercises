@@ -25,8 +25,7 @@ public class ObjectStructure {
     }
 
     /**
-     * wywołuje metode accept obiektów ElementX, która wywołuje metodę przekazanego
-     * visitora
+     * mthod works on Elementx objects, which calls visitor method
      * 
      * @param visitor
      */
