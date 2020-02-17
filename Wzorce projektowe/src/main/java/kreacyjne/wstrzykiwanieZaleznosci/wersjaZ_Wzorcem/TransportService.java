@@ -11,5 +11,5 @@ public interface TransportService {
      * 
      */
     
-    void delivery(DeliveryPackage deliveryPackage);
+    void delivery(DeliveryPackage pack);
 }

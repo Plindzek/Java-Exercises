@@ -13,8 +13,8 @@ public class DeliveryServiceDI {
 //    private final TruckTransport truckTransport = new TruckTransport();
     
     
-    public void sendPackage(DeliveryPackage deliveryPackage){
-	 transportService.delivery(deliveryPackage);
+    public void sendPackage(DeliveryPackage pack){
+	 transportService.delivery(pack);
     }
     
    
