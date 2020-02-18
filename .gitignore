@@ -5,3 +5,5 @@ Przyklady/.classpath
 Przyklady/.classpath
 mavenstart/db.mv.db
 mavenstart/db.trace.db
+.idea
+Wzorce projektowe/DesignPatterns.iml
