@@ -1,4 +1,4 @@
-package dao;
+package strukturalne.dao;
 
 import java.util.List;
 

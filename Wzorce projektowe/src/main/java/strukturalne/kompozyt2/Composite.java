@@ -1,4 +1,4 @@
-package kompozyt2;
+package strukturalne.kompozyt2;
 
 import java.util.ArrayList;
 import java.util.List;

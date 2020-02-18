@@ -1,4 +1,4 @@
-package kompozyt;
+package strukturalne.kompozyt;
 
 public class Leaf implements IComponent {
 

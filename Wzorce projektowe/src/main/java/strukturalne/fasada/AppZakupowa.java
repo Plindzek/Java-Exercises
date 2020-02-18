@@ -1,4 +1,4 @@
-package fasada;
+package strukturalne.fasada;
 
 class AppZakupowa {
 

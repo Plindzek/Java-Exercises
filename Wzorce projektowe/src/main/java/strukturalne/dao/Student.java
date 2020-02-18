@@ -1,4 +1,4 @@
-package dao;
+package strukturalne.dao;
 
 public class Student {
     private String name;

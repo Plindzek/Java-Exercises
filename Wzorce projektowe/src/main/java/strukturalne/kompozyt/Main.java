@@ -1,4 +1,4 @@
-package kompozyt;
+package strukturalne.kompozyt;
 
 import java.util.List;
 

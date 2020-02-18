@@ -1,4 +1,4 @@
-package fasada;
+package strukturalne.fasada;
 
 public class Facade {
     private Paczkomat paczkomat212;

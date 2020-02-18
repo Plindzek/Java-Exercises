@@ -1,4 +1,4 @@
-package most;
+package strukturalne.most;
 
 public class Radio implements IDevice{
     public void Off()

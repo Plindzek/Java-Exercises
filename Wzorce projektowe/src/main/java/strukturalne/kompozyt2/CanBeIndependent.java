@@ -1,4 +1,4 @@
-package kompozyt2;
+package strukturalne.kompozyt2;
 
 /*
  * dodajemy interfejs, aby zerować głebokość strzałki 

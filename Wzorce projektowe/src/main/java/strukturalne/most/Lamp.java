@@ -1,4 +1,4 @@
-package most;
+package strukturalne.most;
 
 public class Lamp implements IDevice{
     public void Off()

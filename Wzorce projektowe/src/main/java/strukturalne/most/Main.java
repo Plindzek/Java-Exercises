@@ -1,4 +1,4 @@
-package most;
+package strukturalne.most;
 
 public class Main
 {
