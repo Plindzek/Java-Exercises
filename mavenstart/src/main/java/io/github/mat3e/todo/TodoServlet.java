@@ -47,16 +47,19 @@ public class TodoServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        String pathInfo = req.getPathInfo();
+        var pathInfo = req.getPathInfo();
         logger.info("Request got with path info  " + pathInfo);
-        resp.setContentType("application/json;charset=UTF-8");
-        Integer id = null;
+
         try {
-            id = Integer.valueOf(req.getPathInfo().substring(1));
+            var id = Integer.valueOf(pathInfo.substring(1));
+            var todo = repository.toggleTodo(id);
+            resp.setContentType("application/json;charset=UTF-8");
+            mapper.writeValue(resp.getOutputStream(), todo );
+
         } catch (NumberFormatException e) {
-            logger.info("Non-numeric value " + pathInfo);
+            logger.info("Wrong path" + pathInfo);
         }
-        mapper.writeValue(resp.getOutputStream(), repository.toggleTodo(id));
+
     }
 
 
