@@ -1,7 +1,0 @@
-<application>
-  <component name="FileTypeManager" version="17">
-    <extensionMap>
-      <mapping pattern="V4__Create_todo_table" type="SQL" />
-    </extensionMap>
-  </component>
-</application>
