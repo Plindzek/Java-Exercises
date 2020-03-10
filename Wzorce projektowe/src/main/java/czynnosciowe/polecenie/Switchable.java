@@ -1,4 +1,4 @@
-package polecenie;
+package czynnosciowe.polecenie;
 
 /**
  * zapewnia metody poweron/off

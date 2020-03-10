@@ -1,4 +1,4 @@
-package stan;
+package czynnosciowe.stan;
 
 public class StateThree extends State{
 

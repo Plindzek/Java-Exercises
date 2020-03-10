@@ -1,4 +1,4 @@
-package polecenie;
+package czynnosciowe.polecenie;
 
 import java.util.Scanner;
 

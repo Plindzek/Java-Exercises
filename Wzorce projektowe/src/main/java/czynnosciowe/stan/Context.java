@@ -1,4 +1,4 @@
-package stan;
+package czynnosciowe.stan;
 
 /**
  * zawiera metodę zmieniającą obiekt jednej z podklas State na obiekt innej oraz

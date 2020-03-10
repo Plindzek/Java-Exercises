@@ -1,4 +1,4 @@
-package polecenie;
+package czynnosciowe.polecenie;
 
 
 public class CloseSwitchCommand implements Command {

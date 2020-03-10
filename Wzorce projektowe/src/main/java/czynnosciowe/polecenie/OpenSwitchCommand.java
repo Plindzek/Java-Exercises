@@ -1,4 +1,4 @@
-package polecenie;
+package czynnosciowe.polecenie;
 
 
 public class OpenSwitchCommand implements Command {

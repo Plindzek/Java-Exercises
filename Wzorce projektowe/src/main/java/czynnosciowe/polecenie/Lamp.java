@@ -1,4 +1,4 @@
-package polecenie;
+package czynnosciowe.polecenie;
 
 /**
  * zawiera metode checkstate wyswietlającą powiadomienia oraz implementuje
