@@ -7,3 +7,6 @@ mavenstart/db.mv.db
 mavenstart/db.trace.db
 .idea
 Wzorce projektowe/DesignPatterns.iml
+*.class
+Przyklady/bin/.project
+Przyklady/bin/Przykłady.iml
