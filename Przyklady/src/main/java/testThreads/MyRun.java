@@ -13,7 +13,7 @@ public class MyRun implements Runnable {
 		while(true) {
 			System.out.println("Watek "+id);
 			try {
-				//usypiamy w¹tek na 100 milisekund
+				//usypiamy watek na 3000 milisekund
 				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();

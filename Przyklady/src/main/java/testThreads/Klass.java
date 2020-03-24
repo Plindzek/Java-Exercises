@@ -4,7 +4,7 @@ public class Klass implements Runnable {
 
 	@Override
 	public void run() {
-System.out.println("run g≥Ûwne");		
+System.out.println("run g≈Ç√≥wne");
 	}
 	
 	public static void main(String[] args) {

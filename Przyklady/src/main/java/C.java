@@ -13,13 +13,13 @@ public class C {
     b = y;
   }
  
-  // Metoda ustalaj¹ca sk³adniki pary 
+  // Metoda ustalajÄ…ca skÅ‚adniki pary
   public void set(int x, int y) { 
     a = x;
     b = y;
   }
  
-  // Metoda pokazujaca parê
+  // Metoda pokazujaca parÄ™
   public void show() {
     System.out.println("( " + a + "," + b + " )");
   }

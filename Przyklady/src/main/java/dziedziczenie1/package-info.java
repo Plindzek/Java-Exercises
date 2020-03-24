@@ -1,1 +1,0 @@
-package dziedziczenie1;

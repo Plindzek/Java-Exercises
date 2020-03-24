@@ -13,7 +13,7 @@ public class PrimeThreads {
                 finder[i] = new PrimeFinder(count);
                 System.out.println("Szukam liczby pierwszej " + count);
             } catch (NumberFormatException nfe) {
-                System.out.println("B³¹d: " + nfe.getMessage());
+                System.out.println("Error: " + nfe.getMessage());
             }
         }
         boolean complete = false;
@@ -31,7 +31,7 @@ public class PrimeThreads {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException ie) {
-                // nic nie rób
+                // do nothing
             }
         }
     }
