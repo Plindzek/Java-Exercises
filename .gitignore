@@ -10,3 +10,4 @@ Wzorce projektowe/DesignPatterns.iml
 *.class
 Przyklady/bin/.project
 Przyklady/bin/Przykłady.iml
+*.iml
