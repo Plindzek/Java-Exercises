@@ -31,9 +31,9 @@ public class AdamTest {
                 System.out.println("to" + line);
             }
         } catch (MalformedURLException mue) {
-            System.out.println("B³¹d URL: " + mue.getMessage());
+            System.out.println("URL error: " + mue.getMessage());
         } catch (IOException ioe) {
-            System.out.println("B³¹d wejœcia-wyjœcia:" + ioe.getMessage());
+            System.out.println("IO error:" + ioe.getMessage());
         }
         return builder.toString();
     }
@@ -67,7 +67,7 @@ public class AdamTest {
             prep2.close();
             conn.close();
         } catch (SQLException sqe) {
-            System.out.println("B³¹d SQL: " + sqe.getMessage());
+            System.out.println("SQL error: " + sqe.getMessage());
         } catch (ClassNotFoundException cnfe) {
             System.out.println(cnfe.getMessage());
         }
@@ -85,12 +85,12 @@ public class AdamTest {
 
     public static void main(String[] arguments) {
         if (arguments.length < 1) {
-            System.out.println("U¿ycie: java QuoteData kod");
+            System.out.println("Usage: java QuoteData kod");
             System.exit(0);
         }
         AdamTest qd = new AdamTest(arguments[0]);
         String data = "\"Katarina\", 100,200,110,030,400,550,600,001";
-        //przy string data powinno byæ qd.retrieveQuote(); ale link yahoo nie dzia³a i nie pobiera danych
+        //przy string data powinno byc qd.retrieveQuote(); ale link yahoo nie dziala i nie pobiera danych
         qd.storeQuote(data);
     }
 }
