@@ -8,11 +8,11 @@ public class ArraysListTest {
 	
 		ArrayList <String> wyrazy = new ArrayList<String>();
 		
-		wyrazy.add("Jestem ");
-		wyrazy.add("programist� ");
+		wyrazy.add("I'm  ");
+		wyrazy.add("programmer ");
 		wyrazy.add("hehe ");
 		wyrazy.add(" :D :D ");
-		wyrazy.add(1, "zajebistym ");
+		wyrazy.add(1, "great ");
 		wyrazy.remove(3);
 		
 		for(String s:wyrazy)
@@ -26,9 +26,9 @@ public class ArraysListTest {
 		{System.out.print(s+" ");}
 		
 		System.out.println();
-			System.out.println(wyrazy.contains("Jestem "));
+			System.out.println(wyrazy.contains("I'm "));
 			System.out.println(wyrazy.get(1));
-			wyrazy.set(1,"przezajebistym");
+			wyrazy.set(1,"supre great");
 		
 			for(String s:wyrazy)
 			{System.out.print(s+" \n");}
