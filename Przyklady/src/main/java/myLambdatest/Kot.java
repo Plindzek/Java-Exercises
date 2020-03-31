@@ -1,6 +1,7 @@
 package myLambdatest;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -10,8 +11,7 @@ interface CheckKot{boolean test(Kot kot);}
 
 class Kot {
     public static void main(String[] args) {
-        List<Kot> listaKotow = new ArrayList<>();
-        makeList(listaKotow);
+        List<Kot> listaKotow = makeList();
        viewKoty(listaKotow, kot -> kot.getWeight()>=2, kot -> kot.toString()
        , System.out::println);
 
@@ -77,21 +77,16 @@ class Kot {
         System.out.println(this.toString());
     }
 
-    public static void makeList(List<Kot> listaKotow) {
-        Kot kot1 = new Kot("Misia", 4.5, 3, Sex.SHE);
-        Kot kot2 = new Kot("Kicia", 0.45, 1, Sex.SHE);
-        Kot kot3 = new Kot("Misia", 1.5, 1, Sex.SHE);
-        Kot kot4 = new Kot("Tosia", 5.0, 2, Sex.SHE);
-        Kot kot5 = new Kot("Benek", 3.5, 4, Sex.HE);
-        Kot kot6 = new Kot("Zenek", 2.5, 2, Sex.HE);
-        Kot kot7 = new Kot("Mrauczek", 1.5, 1, Sex.HE);
-        listaKotow.add(kot1);
-        listaKotow.add(kot2);
-        listaKotow.add(kot3);
-        listaKotow.add(kot4);
-        listaKotow.add(kot5);
-        listaKotow.add(kot6);
-        listaKotow.add(kot7);
+    public static List<Kot>makeList() {
+        return Arrays.asList(
+        new Kot("Misia", 4.5, 3, Sex.SHE),
+        new Kot("Kicia", 0.45, 1, Sex.SHE),
+        new Kot("Misia", 1.5, 1, Sex.SHE),
+        new Kot("Tosia", 5.0, 2, Sex.SHE),
+        new Kot("Benek", 3.5, 4, Sex.HE),
+        new Kot("Zenek", 2.5, 2, Sex.HE),
+        new Kot("Mrauczek", 1.5, 1, Sex.HE));
+
     }
 
     public static void viewKoty(Iterable<Kot> source, CheckKot checker, Function<Kot, String> mapper, Consumer <String> block){
