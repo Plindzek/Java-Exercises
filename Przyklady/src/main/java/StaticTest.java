@@ -13,6 +13,7 @@ public class StaticTest {
     }
 	
 public static void main(String[] args) {
+	{System.out.println("Inicjacja");}
     	for ( i=1;i<=50;)
 	{
 	    var obiekt = new StaticTest();
@@ -20,6 +21,7 @@ public static void main(String[] args) {
 	    System.out.println("pole niestatyczne= " + obiekt.nocounter);
 	    System.out.println("nowy obiekt: " + obiekt);
 	 }
+
 }
 
     static {

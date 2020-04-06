@@ -95,5 +95,4 @@ public class BoardGameCompare {
 	Arrays.sort(games, new BoardGameComparator());
 	System.out.println(Arrays.toString(games));
     }
-
 }
