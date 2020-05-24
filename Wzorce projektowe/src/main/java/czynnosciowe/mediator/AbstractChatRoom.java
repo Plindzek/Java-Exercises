@@ -1,4 +1,4 @@
-package mediator;
+package czynnosciowe.mediator;
 
 public abstract class AbstractChatRoom {
     /**

@@ -1,4 +1,4 @@
-package lancuchZobowiazan;
+package czynnosciowe.lancuchZobowiazan;
 
 /**
  * definiuje numer zadania

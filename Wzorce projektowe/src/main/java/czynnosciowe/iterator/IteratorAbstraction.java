@@ -1,4 +1,4 @@
-package iterator;
+package czynnosciowe.iterator;
 
 /**
  * zapewnia obsługę metod iteratora

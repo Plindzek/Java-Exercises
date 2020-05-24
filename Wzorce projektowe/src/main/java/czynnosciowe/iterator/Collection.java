@@ -1,7 +1,7 @@
-package iterator;
+package czynnosciowe.iterator;
 
 /**
- * definiuje metodę typu IteratorAbstraction, tworzącą listę
+ * definiuje metodę typu czynnosciowe.iterator.IteratorAbstraction, tworzącą listę
  */
 
 public interface Collection {

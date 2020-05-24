@@ -1,4 +1,4 @@
-package odwiedzajacy_visitor;
+package czynnosciowe.odwiedzajacy_visitor;
 
 /**
  * definiuje zachowanie visitora w zależności od przekazanego argumentu

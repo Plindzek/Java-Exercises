@@ -1,4 +1,4 @@
-package pamiatka_memento;
+package czynnosciowe.pamiatka_memento;
 
 /**
  * zapisuje oraz przywraca stan obiektu
@@ -12,20 +12,20 @@ public class Originator {
 
     public void setState(String state)
     {
-        System.out.println("Originator: Setting state to " + state);
+        System.out.println("czynnosciowe.pamiatka_memento.Originator: Setting state to " + state);
         this.state = state;
     }
 
     public Memento save()
     {
-        System.out.println("Originator: Saving to Memento.");
+        System.out.println("czynnosciowe.pamiatka_memento.Originator: Saving to czynnosciowe.pamiatka_memento.Memento.");
         return new Memento(state);
     }
 
     public void restore(Memento m)
     {
         state = m.getState();
-        System.out.println("Originator: State after restoring from Memento: " + state);
+        System.out.println("czynnosciowe.pamiatka_memento.Originator: State after restoring from czynnosciowe.pamiatka_memento.Memento: " + state);
     }
 }
 

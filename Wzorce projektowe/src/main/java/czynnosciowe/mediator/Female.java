@@ -1,4 +1,4 @@
-	package mediator;
+package czynnosciowe.mediator;
 
 public class Female extends Participant{
     

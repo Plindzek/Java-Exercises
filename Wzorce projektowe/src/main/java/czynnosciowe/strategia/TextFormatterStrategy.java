@@ -1,4 +1,4 @@
-package strategia;
+package czynnosciowe.strategia;
 
 public interface TextFormatterStrategy {
 
@@ -6,8 +6,8 @@ public interface TextFormatterStrategy {
 
     /*
      * 2.Po utworzeniu interfejsu rozdzielamy skomplikowany kod na kilka klas, tu:
-     * LowerCaseFormatter, UpperCaseFormatter i CapitalizeFormatter
-     * oraz tworzymy klasę z logiką strategii FormatterContext
+     * czynnosciowe.strategia.LowerCaseFormatter, czynnosciowe.strategia.UpperCaseFormatter i czynnosciowe.strategia.CapitalizeFormatter
+     * oraz tworzymy klasę z logiką strategii czynnosciowe.strategia.FormatterContext
      */
 
 }

@@ -1,4 +1,4 @@
-package interpreter;
+package czynnosciowe.interpreter;
 
 public class Main {
 

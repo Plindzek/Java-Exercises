@@ -1,4 +1,4 @@
-package lancuchZobowiazan;
+package czynnosciowe.lancuchZobowiazan;
 
 public abstract class Number {
 
@@ -6,7 +6,7 @@ public abstract class Number {
 
     /**
      * tworzy listę jednokierunkową, czyli przypisuje obiekt z argumentu do
-     * referencji Number number w klasie Number
+     * referencji czynnosciowe.lancuchZobowiazan.Number number w klasie czynnosciowe.lancuchZobowiazan.Number
      */
 
         public void setObject(Number number)

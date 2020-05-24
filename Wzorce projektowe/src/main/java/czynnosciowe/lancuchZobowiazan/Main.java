@@ -1,4 +1,4 @@
-package lancuchZobowiazan;
+package czynnosciowe.lancuchZobowiazan;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,12 +15,12 @@ public class Main {
 	 * Na końcu przekazujemy po kolei żądania w pętli foreach.
 	 */
 
-	Number one = new One();
-	Number two = new Two();
-	Number three = new Three();
+	java.lang.Number one = new One();
+	java.lang.Number two = new Two();
+	java.lang.Number three = new Three();
 
 	// Ustawiamy, komu obiekty maja przekazywac zadania (jednokierunkowa lista)
-	// Czyli Number number z klasy Number otrzymuje referencję do wskazanego
+	// Czyli czynnosciowe.lancuchZobowiazan.Number number z klasy czynnosciowe.lancuchZobowiazan.Number otrzymuje referencję do wskazanego
 	// obiektu,
 	// co pozwala wykonać forward request na kolejnym obiekcie
 

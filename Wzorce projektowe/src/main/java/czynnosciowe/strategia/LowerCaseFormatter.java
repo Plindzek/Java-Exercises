@@ -1,4 +1,4 @@
-package strategia;
+package czynnosciowe.strategia;
 
 public class LowerCaseFormatter implements TextFormatterStrategy {
 

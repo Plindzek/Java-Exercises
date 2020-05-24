@@ -1,4 +1,4 @@
-package interpreter;
+package czynnosciowe.interpreter;
 
 import java.util.ArrayList;
 import java.util.List;

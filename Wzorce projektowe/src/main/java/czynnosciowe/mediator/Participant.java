@@ -1,4 +1,4 @@
-package mediator;
+package czynnosciowe.mediator;
 
 /**
  * Najważniejsze jest to w tej klasie, że zapisujemy w niej nazwę uczestnika i

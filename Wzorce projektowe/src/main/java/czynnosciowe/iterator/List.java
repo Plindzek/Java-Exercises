@@ -1,8 +1,8 @@
-package iterator;
+package czynnosciowe.iterator;
 
 /**
- * definicje metod iterujących po kolekcji dla obiektu List typu
- * IteratorAbstraction.
+ * definicje metod iterujących po kolekcji dla obiektu czynnosciowe.iterator.List typu
+ * czynnosciowe.iterator.IteratorAbstraction.
  */
 
 public class List implements IteratorAbstraction {

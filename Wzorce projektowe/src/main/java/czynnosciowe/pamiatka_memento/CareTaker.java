@@ -1,4 +1,4 @@
-package pamiatka_memento;
+package czynnosciowe.pamiatka_memento;
 
 import java.util.ArrayList;
 import java.util.List;

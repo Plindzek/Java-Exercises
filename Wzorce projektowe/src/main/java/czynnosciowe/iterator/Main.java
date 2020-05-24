@@ -1,7 +1,5 @@
-package iterator;
-
-// Klient, który korzysta z klasy ListCollection, implementującej interfejs
-// Collection
+package czynnosciowe.iterator;// Klient, który korzysta z klasy czynnosciowe.iterator.ListCollection, implementującej interfejs
+// czynnosciowe.iterator.Collection
 
 public class Main {
 

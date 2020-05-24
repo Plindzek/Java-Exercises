@@ -1,4 +1,4 @@
-package odwiedzajacy_visitor;
+package czynnosciowe.odwiedzajacy_visitor;
 
 import java.util.ArrayList;
 import java.util.List;

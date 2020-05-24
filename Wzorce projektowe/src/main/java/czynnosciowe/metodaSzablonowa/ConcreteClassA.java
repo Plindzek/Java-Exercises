@@ -1,12 +1,12 @@
-package metodaSzablonowa;
+package czynnosciowe.metodaSzablonowa;
 
 public class ConcreteClassA extends AbstractClass {
 @Override
     public void StepOne() {
-	System.out.println("ConcreteClassA.PrimitiveOperation1()");
+	System.out.println("czynnosciowe.metodaSzablonowa.ConcreteClassA.PrimitiveOperation1()");
     }
 @Override
     public void StepTwo() {
-	System.out.println("ConcreteClassA.PrimitiveOperation2()");
+	System.out.println("czynnosciowe.metodaSzablonowa.ConcreteClassA.PrimitiveOperation2()");
     }
 }

@@ -1,13 +1,13 @@
-package iterator;
+package czynnosciowe.iterator;
 
 /**
- * zawiera metodę tworzącą obiekt List o typie interfejsu IteratorAbstraction,
+ * zawiera metodę tworzącą obiekt czynnosciowe.iterator.List o typie interfejsu czynnosciowe.iterator.IteratorAbstraction,
  * więc obsługującego metody iterujące po kolekcji (hasNext i next).
  */
 public class ListCollection implements Collection{
 
     /**
-     * tworzy obiekt List o typie interfejsu IteratorAbstraction, więc obsługującego
+     * tworzy obiekt czynnosciowe.iterator.List o typie interfejsu czynnosciowe.iterator.IteratorAbstraction, więc obsługującego
      * metody iterujące po kolekcji (hasNext i next).
      */
     @Override

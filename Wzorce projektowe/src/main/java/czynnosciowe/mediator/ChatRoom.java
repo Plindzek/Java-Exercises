@@ -1,4 +1,4 @@
-package mediator;
+package czynnosciowe.mediator;
 
 import java.util.Hashtable;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package odwiedzajacy_visitor;
+package czynnosciowe.odwiedzajacy_visitor;
 
 public class ElementB extends Element{
 
@@ -10,6 +10,6 @@ public class ElementB extends Element{
 
     @Override
     public String toString() {
-	return "ElementB";
+	return "czynnosciowe.odwiedzajacy_visitor.ElementB";
     }
 }

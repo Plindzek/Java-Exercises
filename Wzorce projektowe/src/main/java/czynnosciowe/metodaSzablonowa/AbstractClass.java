@@ -1,8 +1,8 @@
-package metodaSzablonowa;
+package czynnosciowe.metodaSzablonowa;
 
 /**
  * Zdefiniowanie szkieletu algorytmu. Oddzielenie części logiki do klas
- * dziedziczących po klasie AbstractClass(klasie bazowej) bez zmieniania
+ * dziedziczących po klasie czynnosciowe.metodaSzablonowa.AbstractClass(klasie bazowej) bez zmieniania
  * podstawowej struktury algorytmu. Zaimplementowanie niezmiennej części
  * algorytmu.
  */

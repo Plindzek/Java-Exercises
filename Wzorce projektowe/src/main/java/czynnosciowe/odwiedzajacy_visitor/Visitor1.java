@@ -1,4 +1,4 @@
-package odwiedzajacy_visitor;
+package czynnosciowe.odwiedzajacy_visitor;
 
 public class Visitor1 extends Visitor{
     
@@ -21,7 +21,7 @@ public class Visitor1 extends Visitor{
 
     @Override
     public String toString() {
-	return "Visitor1";
+	return "czynnosciowe.odwiedzajacy_visitor.Visitor1";
     }
 
 }

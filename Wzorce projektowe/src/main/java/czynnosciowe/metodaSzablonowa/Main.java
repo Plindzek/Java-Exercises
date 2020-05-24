@@ -1,4 +1,4 @@
-package metodaSzablonowa;
+package czynnosciowe.metodaSzablonowa;
 
 public class Main {
 

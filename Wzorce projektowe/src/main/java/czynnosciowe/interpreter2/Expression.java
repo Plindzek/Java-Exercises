@@ -1,4 +1,4 @@
-package interpreter2;
+package czynnosciowe.interpreter2;
 
 /**
  * wzorzec Interpreter przekształca podane dane wejściowe i zwraca w nowej

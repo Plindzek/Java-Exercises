@@ -1,4 +1,4 @@
-package interpreter2;
+package czynnosciowe.interpreter2;
 
 public class Context {
         private String _input;

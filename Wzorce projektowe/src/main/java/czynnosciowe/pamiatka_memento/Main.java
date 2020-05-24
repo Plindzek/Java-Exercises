@@ -1,4 +1,4 @@
-package pamiatka_memento;
+package czynnosciowe.pamiatka_memento;
 
 public class Main {
         public static void main(String[] args)

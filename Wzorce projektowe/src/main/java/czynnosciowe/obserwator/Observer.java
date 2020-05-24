@@ -1,4 +1,4 @@
-package obserwator;
+package czynnosciowe.obserwator;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

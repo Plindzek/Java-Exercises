@@ -1,4 +1,4 @@
-package mediator;
+package czynnosciowe.mediator;
 
 public class Male extends Participant{
     public Male(String name) {

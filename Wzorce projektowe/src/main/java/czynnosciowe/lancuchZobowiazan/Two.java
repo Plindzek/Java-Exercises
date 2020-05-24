@@ -1,6 +1,6 @@
-package lancuchZobowiazan;
+package czynnosciowe.lancuchZobowiazan;
 
-public class Two extends Number
+public class Two extends java.lang.Number
     
 {
     @Override
