@@ -1,4 +1,4 @@
-package pylek;
+package strukturalne.pylek;
 
 public class Main {
     /*

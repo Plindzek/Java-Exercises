@@ -1,6 +1,6 @@
 package czynnosciowe.lancuchZobowiazan;
 
-public class One extends java.lang.Number
+public class One extends Number
     {
     
     

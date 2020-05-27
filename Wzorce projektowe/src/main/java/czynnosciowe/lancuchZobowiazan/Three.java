@@ -1,6 +1,6 @@
 package czynnosciowe.lancuchZobowiazan;
 
-public class Three extends java.lang.Number
+public class Three extends Number
     {
     @Override
     public  void forwardRequest(TypeNumber typenumber)

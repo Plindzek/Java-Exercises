@@ -15,9 +15,9 @@ public class Main {
 	 * Na końcu przekazujemy po kolei żądania w pętli foreach.
 	 */
 
-	java.lang.Number one = new One();
-	java.lang.Number two = new Two();
-	java.lang.Number three = new Three();
+	Number one = new One();
+	Number two = new Two();
+	Number three = new Three();
 
 	// Ustawiamy, komu obiekty maja przekazywac zadania (jednokierunkowa lista)
 	// Czyli czynnosciowe.lancuchZobowiazan.Number number z klasy czynnosciowe.lancuchZobowiazan.Number otrzymuje referencję do wskazanego

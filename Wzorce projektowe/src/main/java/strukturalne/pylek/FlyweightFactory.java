@@ -1,4 +1,4 @@
-package pylek;
+package strukturalne.pylek;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -14,7 +14,7 @@ public class FlyweightFactory {
     private Map<String, Relation> relations = Collections.synchronizedMap(new HashMap());
 
     public synchronized Relation createRelation(String description) {
-	Relation relation = (Relation) relations.get(description);
+	Relation relation =  relations.get(description);
 	if (relation == null) {
 	    relation = new Relation(description);
 	    relations.put(description, relation);

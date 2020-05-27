@@ -1,4 +1,4 @@
-package pylek;
+package strukturalne.pylek;
 
 /*
  * W rozwiązaniu tego wzorca tworzymy tylko unikatowe obiekty. 
