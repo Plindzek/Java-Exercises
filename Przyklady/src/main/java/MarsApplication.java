@@ -1,5 +1,5 @@
-package com.java21days;
 class MarsApplication  {
+
 public static void main(String[] args) {
 MarsRobot spirit = new MarsRobot();
 MarsRobot.status = "zmieni³em static";
@@ -19,7 +19,7 @@ spirit.showAttributes();
 System.out.println("testujemy ogranicznik prêdkoœci");
 spirit.speed=12000;
 spirit.showAttributes();
-spirit.chekSpeed();
+spirit.checkSpeed();
 spirit.showAttributes();
 MarsRobot Mirek = new MarsRobot();
 Mirek.showAttributes();

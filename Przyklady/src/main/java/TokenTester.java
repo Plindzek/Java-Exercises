@@ -1,5 +1,3 @@
-package com.java21days;
-
 import java.util.StringTokenizer;
 
 public class TokenTester {

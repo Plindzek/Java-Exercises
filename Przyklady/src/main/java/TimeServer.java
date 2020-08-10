@@ -1,5 +1,3 @@
-package com.java21days;
-
 import java.io.*;
 import java.net.*;
 import java.util.*;
