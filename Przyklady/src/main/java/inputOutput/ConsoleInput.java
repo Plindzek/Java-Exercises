@@ -21,13 +21,13 @@ public class ConsoleInput {
             buff.close();
             return response.toString();
         } catch (IOException e) {
-            System.out.println("Wyj¹tek: " + e.getMessage());
+            System.out.println("WyjÄ…tek: " + e.getMessage());
             return null;
         }
     }
 
     public static void main(String[] arguments) {
-        System.out.print("\nJak siê nazywasz? ");
+        System.out.print("\nJak siÄ™ nazywasz? ");
         String input = ConsoleInput.readLine();
         System.out.println("\nWitaj, " + input);
     }

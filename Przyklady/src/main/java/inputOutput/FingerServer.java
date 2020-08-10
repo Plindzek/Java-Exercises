@@ -65,30 +65,31 @@ public class FingerServer {
         throws IOException {
 
         // Ustaw wejœcie i wyjœcie.
-        InputStreamReader isr = new InputStreamReader (
+        InputStreamReader inputStreamReader = new InputStreamReader (
             connection.getInputStream());
-        BufferedReader is = new BufferedReader(isr);
-        PrintWriter pw = new PrintWriter(new
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        PrintWriter printWriter = new PrintWriter(new
             BufferedOutputStream(connection.getOutputStream()),
             false);
 
         // Wyœlij pozdrowienie.
-        pw.println("Witam na moim serwerze :)");
-        pw.flush();
+        printWriter.println("Witam na moim serwerze :)");
+        printWriter.flush();
 
         // Obs³u¿ dane wejœciowe.
         String outLine = null;
-        String inLine = is.readLine();
+        String inLine = bufferedReader.readLine();
 
         if (inLine.length() > 0) {
             outLine = inLine;
         }
-        readPlan(outLine, pw);
+        System.out.println("read file");
+        readPlan(outLine, printWriter);
 
         // Czyszczenie.
-        pw.flush();
-        pw.close();
-        is.close();
+        printWriter.flush();
+        printWriter.close();
+        bufferedReader.close();
     }
 
     private void readPlan(String userName, PrintWriter pw) {
