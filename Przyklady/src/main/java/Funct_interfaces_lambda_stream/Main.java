@@ -17,9 +17,9 @@ class Main {
         System.out.println("2...method with our interface.............................");
         printPersons(roster, new CheckPersonEligibleForSelectiveService());
         System.out.println("3.....method with lambda instead of class.................");
-        printPersons(roster, (Person p) -> p.getGender() == Person.Sex.MALE
-                && p.getAge() >= 20
-                && p.getAge() <= 40
+        printPersons(roster,  person -> person.getGender() == Person.Sex.MALE
+                && person.getAge() >= 20
+                && person.getAge() <= 40
         );
         System.out.println("4.......method with lambda and with Predicate interface...");
         printPersonsWithPredicate(roster, (Person p) -> p.getGender() == Person.Sex.MALE
@@ -38,7 +38,7 @@ class Main {
         processPersonsWithFunction(
                 roster,
                 p -> p.getGender() == Person.Sex.MALE
-                        && p.getAge() >= 20
+                        && p.getAge() >= 0
                         && p.getAge() <= 40,
                 p -> p.getEmailAddress(),
                 email -> System.out.println(email)
@@ -73,9 +73,23 @@ class Main {
         Person two = new Person("Ewa", LocalDate.of(1989, Month.SEPTEMBER, 16), Person.Sex.FEMALE, "Ewa@gmail.com");
         Person three = new Person("Peter", LocalDate.of(1999, Month.SEPTEMBER, 20), Person.Sex.MALE, "Peter@gmail.com");
         Person four = new Person("Kot", LocalDate.of(1925, Month.SEPTEMBER, 14), Person.Sex.FEMALE, "kot@gmail.com");
+        Person five = new Person("Aasa", LocalDate.of(1945, Month.JULY, 14), Person.Sex.MALE, "asast@gmail.com");
+        Person six = new Person("Adam", LocalDate.of(2006, Month.SEPTEMBER, 14), Person.Sex.MALE, "adam@gmail.com");
+        Person seven = new Person("Dupa", LocalDate.of(1990, Month.APRIL, 23), Person.Sex.FEMALE, "dupa8@gmail.com");
+        Person eight = new Person("Qqaa", LocalDate.of(1997, Month.OCTOBER, 14), Person.Sex.FEMALE, "qqaa@gmail.com");
+        Person nine = new Person("On", LocalDate.of(2012, Month.JULY, 01), Person.Sex.MALE, "On@gmail.com");
         roster.add(one);
         roster.add(two);
         roster.add(three);
         roster.add(four);
+        roster.add(four);
+        roster.add(four);
+        roster.add(five);
+        roster.add(six);
+        roster.add(seven);
+        roster.add(seven);
+        roster.add(seven);
+        roster.add(eight);
+        roster.add(nine);
     }
 }
